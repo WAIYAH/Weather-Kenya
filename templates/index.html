@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="weather-bg-default flex items-center justify-center min-h-screen transition-all duration-500">
+    <div class="bg-white bg-opacity-90 p-8 rounded-2xl shadow-2xl w-full max-w-lg mx-4">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Nairobi & Environs Weather</h1>
+        
+        <form id="weatherForm" class="flex flex-col gap-4">
+            <select id="citySelect" class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
+                <option value="Nairobi">Nairobi</option>
+                <option value="Thika">Thika</option>
+                <option value="Kiambu">Kiambu</option>
+                <option value="Machakos">Machakos</option>
+                <option value="">Other (type below)</option>
+            </select>
+            <input 
+                type="text" 
+                id="cityInput" 
+                placeholder="Enter other city name" 
+                class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring:blue-500 hidden"
+            >
+            <button 
+                type="submit" 
+                class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors"
+            >
+                Get Weather
+            </button>
+        </form>
+
+        <div id="weatherResult" class="mt-6 text-center">
+            <p class="text-gray-500">Select a city to view the weather</p>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+.weather-bg-clear { background: linear-gradient(to bottom, #87CEEB, #E0F6FF); }
+.weather-bg-clouds { background: linear-gradient(to bottom, #B0C4DE, #D3D3D3); }
+.weather-bg-rain { background: linear-gradient(to bottom, #4682B4, #708090); }
+.weather-bg-default { background: linear-gradient(to bottom, #4B5EAA, #A3BFFA); }
